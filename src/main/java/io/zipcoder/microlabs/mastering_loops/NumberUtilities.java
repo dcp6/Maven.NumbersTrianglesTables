@@ -29,7 +29,7 @@ public class NumberUtilities {
 
     public static String getSquareNumbers(int start, int stop, int step)
     {
-       return getExponentiations(start,stop,step,2);
+        return getExponentiations(start,stop,step,2);
     }
 
     public static String getRange(int start) {
@@ -55,4 +55,5 @@ public class NumberUtilities {
         return exponentiationsOutput;
     }
 }
+
 
