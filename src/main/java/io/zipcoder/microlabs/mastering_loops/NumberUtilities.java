@@ -32,17 +32,24 @@ public class NumberUtilities {
         return getExponentiations(start,stop,step,2);
     }
 
-    public static String getRange(int start) {
+    public static String getRange(int stop)
+    {
 
-        return null;
+        return getRange(0,stop,1);
     }
-    public static String getRange(int start, int stop) {
-        return null;
+    public static String getRange(int start, int stop)
+    {
+        return getRange(start,stop,1);
     }
 
 
-    public static String getRange(int start, int stop, int step) {
-        return null;
+    public static String getRange(int start, int stop, int step)
+    {
+        String rangeOutput ="";
+        for (int i = start; i < stop;i += step) {
+            rangeOutput += i;
+        }
+        return rangeOutput;
     }
 
 
