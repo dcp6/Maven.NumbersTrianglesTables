@@ -1,5 +1,5 @@
 package io.zipcoder.microlabs.mastering_loops;
-
+import java.lang.StringBuilder;
 public class TriangleUtilities {
 
     public static String getRow(int numberOfRows) {
@@ -20,10 +20,14 @@ public class TriangleUtilities {
         }
         public static String getTriangle ( int numberOfStars){
             {
+                String triangleOut = "";
                 for (int i = 0; i < numberOfStars; i++) {
-                    System.out.println("*");
+                   for (int j = 0; j<= i; j++) {
+                       triangleOut += "*";
+                   }
+                   triangleOut += "\n";
                 }
-                return null;
+              return triangleOut;
             }
 
         }
