@@ -16,7 +16,10 @@ public class TableUtilities {
             for (int j = 1; j <= tableSize; j++) {
 
                 if (j == 1) {
-                    tableOut += j*i + "| ";
+                    tableOut += j*i + "  |  ";
+                }
+                else if (i > 9) {
+                    tableOut += j*i + "  |  " ;
                 }
                 else if (j*i > 100) {
                     tableOut += j*i + "| ";
